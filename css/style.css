@@ -1,0 +1,141 @@
+@import "reset.css";
+
+
+body {
+    background-color: #ababab;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+header .inner-header{
+    margin: 0 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    margin: 50px 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hide {
+    display: none !important;
+}
+
+.float_clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.lodding{
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+}
+
+.lodding i{
+    animation: spin 2s linear infinite;
+    color: #fff;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loginView {
+    margin: 120px auto 0;
+}
+
+
+.card{
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+    border-radius: 20px;
+    width: 360px;
+    min-height: 500px;
+    margin: 20px 0 0;
+    background-size: contain; 
+    background-position: center;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 10px;
+}
+
+.card-header div{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-header img{
+    height: 30px;
+}
+
+.card-body {
+    margin: 0 20px;
+    height: 390px;
+    overflow: scroll;
+}
+
+.card-body dl {
+    margin: 10px 0 0;
+    font-size: 20px;
+}
+.card-body dd{
+    float: left;
+}
+
+.card-body dt{
+    width: 120px;
+    float: left;
+}
+
+.card-footer{
+    position: relative;
+    margin: 0 20px 10px;
+    border: 1px solid #a5a5a5;
+}
+
+.card-footer input{
+    display: block;
+    width: calc(100% - 45px);
+    padding: 0 30px 0 15px;
+    margin: 0;
+    border: 0;
+    line-height: 50px;
+}
+.card-footer button{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    border: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+

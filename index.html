@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vanilla_js_challenges</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head> 
+  <body>
+    <section class="card" id="loginView">
+        <div class="card-header">
+            <div>로그인 후 이용해주세요.</div>
+        </div>
+        <form class="card-body" id="loginForm">
+            <input type="text" placeholder="이름을 입력해주세요." maxlength="15" required/>
+            <input type="submit" value="로그인">
+        </form>
+    </section>
+
+    <main class="hide" id="memberView">
+        <div class="lodding" id="lodding">
+            <i class="fas fa-spinner"></i>
+        </div>
+        <header>
+            <div class="inner-header">
+                <p id="clock"></p>
+                <p id="member"></p>
+            </div>
+        </header>
+        <section class="card" id="weatherCard">
+            <div class="card-header">
+                <div id="city"></div>
+                <img src="img/icons/unknown.png" id="weather"/>
+            </div>
+            <div class="card-body">
+                <dl class="float_clear">
+                    <dt>temp</dt>
+                    <dd id="temperature">-</dd>
+                </dl>
+                <dl class="float_clear">
+                    <dt>description</dt>
+                    <dd id="description">-</dd>
+                </dl>
+                <dl class="float_clear">
+                    <dt>speed</dt>
+                    <dd id="windSpeed">-</dd>
+                </dl>
+                <dl class="float_clear">
+                    <dt>wind</dt>
+                    <dd id="windDeg">-</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <div>TODO-List</div>
+            </div>
+            <div class="card-body">
+                <ul id="todo-list"></ul>
+            </div>
+            <div class="card-footer">
+                <form id="todoForm">
+                    <input type="text" placeholder="Write a To Do and Press Enter" required >
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    
+    <script src="https://kit.fontawesome.com/70c603a486.js" crossorigin="anonymous"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
